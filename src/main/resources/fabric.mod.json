@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "mm-item-tracker",
+  "version": "${version}",
+  "name": "Monumenta Item Tracker",
+  "description": "Mod for Monumenta to track loot.",
+  "authors": [
+    "Ruskei"
+  ],
+  "contact": {
+    "repo": "https://github.com/Ruskei/mm-item-tracker"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mm-item-tracker/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ruskei.mmitemtracker.MonumentaItemTrackerClient"
+    ]
+  },
+  "mixins": [
+    "mm-item-tracker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
